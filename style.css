@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp10640482.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+header{
+    width: 1366px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header img{
+    height: 100%;
+}
+
+nav{
+    width: 1366px;
+    height: 45px;
+    margin: 0 auto;
+    font-family: oswald;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #cba025;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px 20px; 
+    color: black;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: rgba(240, 255, 255, 0.887);
+}
+
+main{
+    width: 1366px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.personaje{
+    width: 1300px;
+    height: 400px;
+    background-color: rgba(240, 248, 255, 0.524);
+    margin-top: 20px;
+    margin-left: 33px;
+    display:inline-block ;
+}
+
+.foto{
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-left: 33px;
+    text-align: center;
+}
+
+.foto img{
+    height:80%;
+    width: 90%;
+}
+
+.texto{
+    width: 800px;
+    height: 400px;
+    float: left;
+    margin-left: 33px;
+    padding: 20px;
+    font-family: Nunito;
+}
+
+.texto h2{
+    font-family: League Spartan;
+}
+
+footer{
+    width: 1366px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #cba025;
+}
