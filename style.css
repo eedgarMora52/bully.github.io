@@ -1,90 +1,239 @@
-*{
-    box-sizing: border-box;
+ /* Estilos del navbar */
+ .navbar {
+    background-color: red;
 }
 
-body{
-    background-image: url(https://wallpapercave.com/wp/wp10640482.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
-header{
-    width: 1366px;
-    height: 200px;
-    margin: 0 auto;
-    text-align: center;
+.navbar-brand {
+    font-family: Horizon;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(47, 210, 90);
 }
 
-header img{
-    height: 100%;
+.nav-link {
+    color: rgb(255, 255, 255) !important;
 }
 
-nav{
-    width: 1366px;
-    height: 45px;
-    margin: 0 auto;
-    font-family: oswald;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #cba025;
-}
-
-nav a{
-    text-decoration: none;
-    padding: 10px 20px; 
-    color: black;
-    transition: 0.5s;
-}
-
-nav a:hover{
-    background-color: rgba(240, 255, 255, 0.887);
-}
-
-main{
-    width: 1366px;
+/* Ajustes para la imagen en el navbar */
+.home-icon {
+    width: 80px;  /* Ajusta el tamaño de la imagen */
     height: auto;
-    margin: 0 auto;
+    display: block;
 }
 
-.personaje{
-    width: 1300px;
-    height: 400px;
-    background-color: rgba(240, 248, 255, 0.524);
-    margin-top: 20px;
-    margin-left: 33px;
-    display:inline-block ;
+
+.btn {
+    margin-right: 20px;
 }
 
-.foto{
-    width: 400px;
-    height: 400px;
-    float: left;
-    margin-left: 33px;
+
+.trending-topic{
+    color: red;
+    text-align: center;
+    
+    font-family: horizon;
+    font-size: 150px;
+}
+
+
+.box {
+    width: auto;
+    border: 10px solid rgb(255, 0, 0);
+}
+
+.section-container {
+    /* margin: 20px; */
+    background-color: black;
+    border: 70px solid rgb(0, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.card {
+    background-color: #D90000; /* Rojo intenso */
+    color: white; /* Texto en blanco */
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px black;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.card:hover {
+    background-color: #B80000; /* Rojo más oscuro al hacer hover */
+    transform: scale(1.02);
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+
+
+/* Ajuste del carrusel */
+/* .carousel-item img {
+    width: 100%;
+    height: auto;
+}*/
+
+div.carousel-item active {
+    width: 100%;
+    height: auto;
+}
+
+div.img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Estilos de la sección de biografía */
+.biografia-section {
+    background-color: #111;
+    padding: 50px 0;
+    color: white;
     text-align: center;
 }
 
-.foto img{
-    height:80%;
-    width: 90%;
+.biografia-main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 30px;
 }
 
-.texto{
-    width: 800px;
-    height: 400px;
-    float: left;
-    margin-left: 33px;
+.biografia-card {
+    background-color: #222;
     padding: 20px;
-    font-family: Nunito;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.texto h2{
-    font-family: League Spartan;
+.biografia-card:hover {
+    transform: scale(1.05);
 }
 
-footer{
-    width: 1366px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: #cba025;
+.biografia-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.biografia-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.biografia-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Estilos de la sección de formulario */
+.form-section {
+    background-color: #111;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+.form-control {
+    background-color: #222;
+    color: white;
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.form-control::placeholder {
+    color: gray;
+}
+
+.btn-danger {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #111;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    border-top: 5px solid red;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.footer-links,
+.footer-social {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin: 8px 0;
+}
+
+.footer-links a,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: red;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    border-top: 2px solid red;
+    padding-top: 10px;
 }
